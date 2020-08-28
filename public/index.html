@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html style="min-width: 1270px;"><head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+
+  <!-- saved from url=(0032)http://www.hermanoscofrades.com/ -->
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <link rel="dns-prefetch" href="http://www.urbecom.com/">
+  <link rel="dns-prefetch" href="http://connect.facebook.net/">
+  <link rel="dns-prefetch" href="http://google-analytics.com/">
+  <script src="./Hermanos Cofrades Sevilla - Ropa y complementos para el cofrade_files/g=tiendasjs" type="text/javascript"></script>
+  <link rel="stylesheet" type="text/css" href="./Hermanos Cofrades Sevilla - Ropa y complementos para el cofrade_files/g=tiendascss">
+  
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Hermanos Cofrades Sevilla - Ropa y complementos para el cofrade</title>
+  <meta name="description" content="Hermanos Cofrades Sevilla - Tienda online de ropa y complementos para el cofrade. ">
+  <meta name="keywords" content="hermanos cofrades, sevilla, cofrades, ropa, complementos, todo para el cofrade, semana santa">
+  <link href="http://www.hermanoscofrades.com/" rel="canonical">
+  
+  <link href="http://www.hermanoscofrades.com/favicon.ico" rel="shortcut icon">
+  <link href="./Hermanos Cofrades Sevilla - Ropa y complementos para el cofrade_files/style.css" rel="stylesheet" type="text/css">
+  <script src="./Hermanos Cofrades Sevilla - Ropa y complementos para el cofrade_files/funciones.js.descarga"></script>
+  <script>$(function(){var el = $('.liAccordion'); el.liAccordion({clicablelink:true});})</script>
+  
+  <meta property="og:title" content="Hermanos Cofrades Sevilla - Ropa y complementos para el cofrade">
+  <meta property="og:url" content="http://www.hermanoscofrades.com">
+  <meta property="og:description" content="Hermanos Cofrades Sevilla - Tienda online de ropa y complementos para el cofrade. ">
+  <meta property="og:type" content="website">
+  
+  <script type="application/ld+json">{ "@context": "http://schema.org", "@type": "WebSite", "url": "http://www.hermanoscofrades.com/", "potentialAction": { "@type": "SearchAction", "target": "http://www.hermanoscofrades.com/index.php?p=hermanoscofrades&proceed_search=1&mod=products&search_by={query}", "query-input": "required name=query" }}</script>
+  
+  <style id="mz-css" type="text/css"></style></head>
+
+  <body style="min-width: 1270px;">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+
+    <script type="text/javascript">$(function(){$("img.lazy").lazyload({effect:"fadeIn"})});</script>
+
+
+                <script type="text/javascript">
+                    $('.vista-rapida-ficha-link').click(function(e){
+                        var value = $(this).attr('href');
+                        var capRel = $(this).attr('rel');
+                        var ArrayRel = capRel.split('|');
+                        var widthM = ArrayRel[0];
+                        var alturaVentana = ArrayRel[1];
+                        //var alturaVentana = $(window).height() - alturaVentana;
+                        var urlProducto = ArrayRel[2];
+                        var linkUrlProducto = function() {window.open(urlProducto, '_self', false)};
+
+                        $.fallr('show', {
+                                content     : '<iframe width="' + (widthM - 40) +'" height="' + (alturaVentana - 90) +'" src="' + value + '" frameborder="0" scrolling="auto"></iframe>',
+                                width       : widthM,
+                                height      : alturaVentana,
+                                icon        : 'magnifier',
+                                closeKey        : true,
+                                closeOverlay    : true,
+                                zIndex      : 100000,
+                                buttons     : {
+                                    button1: {text: 'Ir a la p�gina del Producto', onclick: function() {linkUrlProducto()}},
+                                    button2 : {text: 'Cerrar'}
+                                }
+                        });
+                        e.preventDefault();
+
+                        });
+                </script>
+    <script>function loadLoading(){$('body').loading({message: 'CARGANDO...',theme: 'dark'});}$('#buttonUpdateCart,#boton-carrito-cancelar,#boton-continuar').click(function() {$('body').loading({message: 'CARGANDO...',theme: 'dark'});});</script>
+
+
+
+      <!--googleoff: all -->
+      <script type="text/javascript">
+      //<![CDATA[
+      if(document.getElementById('Cart'))
+      {
+      document.getElementById('Cart').innerHTML="<div id=\"carro-vacio\">Su Carrito est� vac�o</div>";
+      }
+      //]]>
+      </script>
+      <!--googleon: all --><div id="fallr-overlay"></div>
+
+  </body>
+</html>
