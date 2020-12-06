@@ -1,0 +1,164 @@
+.productos {
+	h1 {
+		margin: 0px;
+		padding: 0px;
+	}
+	width: 230px;
+	min-height: 370px;
+	margin: 10px;
+}
+
+.productos-contenedor {
+	text-align: center;
+	border: solid 1px #ebc2ed;
+	background: #ffffff;
+	box-shadow: 0px 0px 7px rgba(0,0,0,0);
+	overflow: hidden;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	&:hover {
+		box-shadow: 0px 0px 7px rgba(0,0,0,0.7);
+		.ficha-boton2 {
+			margin: 5px auto 5px auto;
+			opacity: 1;
+		}
+		.vista-rapida-ficha {
+			opacity: 1;
+		}
+		.productos-imagen {
+			img {
+				-webkit-transform: scale(1.18);
+				transform: scale(1.18);
+			}
+		}
+	}
+}
+
+.nombreCont {
+	width: 230px;
+	height: 40px;
+	text-align: center;
+	vertical-align: middle;
+	display: table-cell;
+}
+.productos-imagen {
+	margin: 4px auto 5px auto;
+	width: 220px;
+	height: 200px;
+	line-height: 220px;
+	overflow: hidden;
+	img {
+		vertical-align: middle;
+		max-width: 220px;
+		max-height: 220px;
+		height: auto !important;
+		transition: all 0.5s;
+		-webkit-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+		-o-transition: all 0.5s;
+		-ms-transition: all 0.5s;
+	}
+}
+.productos-nombre {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 8px 0px 8px;
+	text-align: center;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 16px;
+	a {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 16px;
+		color: #000000;
+		&:hover {
+			color: #89418d;
+		}
+	}
+}
+.productos-precio {
+	padding: 5px;
+	font-weight: 600;
+	font-size: 24px;
+	color: #89418d;
+}
+
+.pvp_oferta {
+	font-weight: 600;
+	font-size: 24px;
+	color: #89418d;
+}
+.pvp_oferta_old {
+	color: #F00;
+}
+.fichaOpiniones {
+	width: 100%;
+	height: 20px;
+	font-size: 16px;
+	line-height: 20px;
+	text-align: center;
+}
+.ficha-boton2 {
+	height: 30px;
+	margin-top: -25px;
+	opacity: 0;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+}
+.eti-productos {
+	pointer-events: none;
+}
+.eti-oferta {
+	width: 100%;
+	position: relative;
+	color: #000000;
+	pointer-events: none;
+}
+.eti-descuento {
+	top: 8px;
+	right: 8px;
+	width: 50px;
+	height: 50px;
+	font: normal 24px 'alternate', Arial, Helvetica, sans-serif;
+	line-height: 52px;
+	text-align: center;
+	background: rgba(255,255,255,0.95);
+	box-shadow: 0px 0px 6px rgba(0,0,0,0.6);
+	border-radius: 49%;
+	position: absolute;
+	z-index: 25;
+}
+
+#productos-final-nombre {
+	text-align: left;
+	font-size: 25px;
+	font-weight: 400;
+	color: #89418d;
+}
+#productos-final-imagen {
+	text-align: left;
+	margin: 0px;
+	img {
+		margin: 5px 20px 10px 0px;
+		max-width: 300px;
+		display: block;
+		float: left;
+	}
+}
+.precio_oferta {
+	font-weight: bold;
+	font-size: 24px;
+	text-decoration: line-through;
+	color: #F00;
+}
+.precio_oferta2 {
+	font-weight: bold;
+	font-size: 28px;
+	color: #F00;
+}

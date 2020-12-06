@@ -1,0 +1,238 @@
+#Cabz {
+	background: url(images/cabeceraFondo.jpg) repeat-x top center;
+	z-index: -1;
+	margin: auto;
+	width: 100%;
+}
+#cabecera {
+	width: 1060px;
+	margin: auto;
+	height: 175px;
+	margin: 0px auto;
+}
+.contactoTelf {
+	margin: 45px 0px 0px 30px;
+	position: absolute;
+}
+.contactoWhat {
+	margin: 45px 0px 0px 77px;
+	position: absolute;
+}
+.contactoMail {
+	margin: 45px 0px 0px 124px;
+	position: absolute;
+}
+.logo {
+	width: 400px;
+	margin: 10px 0px 0px -100px;
+	position: absolute;
+}
+.usuarios {
+	margin: 17px 0px 0px 900px;
+	position: absolute;
+}
+#carro {
+	width: 200px;
+	min-height: 24px;
+	margin: 17px 20px 0px 1120px;
+	text-align: right;
+	position: absolute;
+	&:hover {
+		.carro-flotante {
+			opacity: 1;
+			width: 440px;
+			min-height: 50px;
+			height: inherit;
+			margin: 0px 0px 0px -400px;
+			padding: 7px;
+			display: block;
+		}
+	}
+}
+
+
+#Cart {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 16px;
+	padding: 0px;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 15px;
+	text-align: left;
+	color: #000000;
+	a {
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 16px;
+		color: #777777;
+		&:hover {
+			color: #000000;
+		}
+	}
+}
+#carro-lleno {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 16px;
+	width: 98%;
+	padding: 10px 0px 5px;
+	color: #000000;
+	text-align: right;
+}
+#carro-boton {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 16px;
+	width: 200px;
+	margin: 10px auto;
+	padding: 8px;
+	text-align: center;
+	color: #ffffff;
+	border-radius: 8px;
+	border: solid 3px rgba(0,0,0,0.5);
+	background: #bbbbbb;
+	a {
+		color: #ffffff;
+		&:hover {
+			color: #ffffff;
+		}
+	}
+	&:hover {
+		background: #777777;
+	}
+}
+#carro-vacio {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 16px;
+	width: 200px;
+	margin: 10px auto;
+	padding: 8px;
+	text-align: center;
+	color: #ffffff;
+	border-radius: 8px;
+	border: solid 3px rgba(0,0,0,0.5);
+	background: #bbbbbb;
+	&:hover {
+		background: #777777;
+	}
+}
+.carro-flotante {
+	opacity: 0;
+	width: 100px;
+	height: 0px;
+	overflow: hidden;
+	margin: 0px;
+	padding: 0;
+	z-index: 20000;
+	position: absolute;
+	background: rgba(245,245,245,0.9);
+	border: solid 1px #999999;
+	border-radius: 10px;
+	box-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	-ms-transition: all 0.4s;
+}
+
+#buscar {
+	width: 230px;
+	height: 30px;
+	margin: 35px 0px 0px 580px;
+	margin-left: -115px;
+	text-align: left;
+	position: absolute;
+}
+.buscar {
+	width: 50%;
+	height: 22px;
+	margin: 0px 0px 0px 580px;
+	padding: 3px 25px 3px 30px;
+}
+
+.botonBuscar {
+	width: 30px;
+	height: 34px;
+	float: left;
+	display: block;
+	margin: 0px 0px 0px 287px;
+	border-radius: 0px 5px 5px 0px;
+	background: #89418d;
+	img {
+		width: 20px;
+		margin: 5px 0px 0px 0px;
+	}
+}
+.boton_buscar {
+	width: 100px;
+	height: 35px;
+	font: bold 14px Arial, Helvetica, sans-serif;
+	line-height: 12px;
+	border-radius: 8px;
+	border: 2px Solid #000000;
+	color: #ffffff;
+	background: #89418d;
+	&:hover {
+		border: 2px Solid #000000;
+		color: #000000;
+		background: #ffffff;
+	}
+}
+#cabeceraMenu {
+	width: 1200px;
+	height: 40px;
+	margin: 110px 0px 0px 270px;
+	clear: both;
+	text-align: left;
+	position: absolute;
+}
+
+#menu {
+	li {
+		a {
+			transition: all 0.4s;
+			-webkit-transition: all 0.4s;
+			-moz-transition: all 0.4s;
+			-o-transition: all 0.4s;
+			-ms-transition: all 0.4s;
+		}
+	}
+}
+
+ul#menu {
+	margin: 0px;
+	text-align: center;
+	float: left;
+	left: 30%;
+	position: relative;
+	li {
+		float: left;
+		list-style: none;
+		right: 50%;
+		position: relative;
+		a {
+			padding: 0px 15px;
+			color: #ffffff;
+			font-size: 16px;
+			line-height: 40px;
+			text-transform: uppercase;
+			display: block;
+			&:hover {
+				color: #ebc2ed;
+				background: #38173a;
+			}
+		}
+	}
+}
+.redesCabecera {
+	img {
+		height: 36px;
+		margin: 0px 0px;
+	}
+}
+#headerclear {
+	clear: both;
+}

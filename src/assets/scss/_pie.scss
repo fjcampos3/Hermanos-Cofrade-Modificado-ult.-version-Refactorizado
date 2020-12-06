@@ -1,0 +1,122 @@
+#Pie {
+	margin: auto;
+	width: 100%;
+	background: url(images/pieFondo.png) repeat top center;
+}
+#pieAnuncios {
+	margin: auto;
+	text-align: center;
+	border-top: solid 1px #ebc2ed;
+	border-bottom: solid 1px #ebc2ed;
+}
+#pieContenedor {
+	width: 1060px;
+	margin: auto;
+	font-size: 15px;
+	line-height: 15px;
+	color: #ebc2ed;
+	a {
+		font-size: 15px;
+		line-height: 15px;
+		color: #ebc2ed;
+		&:hover {
+			color: #ffffff;
+		}
+	}
+}
+.pieBloque {
+	width: 28%;
+	margin: 0px 2.66%;
+	text-align: center;
+	float: left;
+	display: block;
+	p {
+		margin: 0px 0px 3px 0px;
+	}
+}
+#pieTexto {
+	width: 1060px;
+	margin: auto;
+	font-size: 15px;
+	line-height: 15px;
+	color: #ebc2ed;
+	width: 100%;
+	margin: 20px auto auto auto;
+	padding: 20px 0px;
+	text-align: center;
+	background: rgba(0,0,0,0.5);
+	border-top: solid 1px #ebc2ed;
+	color: #ebc2ed;
+	a {
+		font-size: 15px;
+		line-height: 15px;
+		color: #ebc2ed;
+		color: #ebc2ed;
+		&:hover {
+			color: #ffffff;
+		}
+	}
+}
+.pieTitular {
+	width: 100%;
+	margin-bottom: 15px;
+	padding: 25px 0px 5px;
+	font-weight: 600;
+	font-size: 19px;
+	line-height: 20px;
+	color: #fff;
+	border-bottom: solid 1px #fff;
+}
+.iconoPie {
+	margin: 0px 5px 0px 0px;
+	font-size: 22px;
+	line-height: 22px;
+	color: #ffffff;
+	display: inline;
+}
+.verdeWhatsApp {
+	color: #40a035;
+}
+.redesPie {
+	float: none;
+	display: inline;
+	img {
+		height: 36px;
+		margin: 10px 5px;
+	}
+}
+.iconIconoEmail {
+	&:before {
+		content: "\e906";
+	}
+}
+.iconIconoTelef {
+	&:before {
+		content: "\e907";
+	}
+}
+.iconPieDirec {
+	&:before {
+		content: "\e908";
+	}
+}
+.iconPieEmail {
+	&:before {
+		content: "\e909";
+	}
+}
+.iconPieTelef {
+	&:before {
+		content: "\e90a";
+	}
+}
+.iconPieMovil {
+	&:before {
+		content: "\e917";
+	}
+}
+.iconPieFax {
+	&:before {
+		content: "\e90b";
+	}
+}

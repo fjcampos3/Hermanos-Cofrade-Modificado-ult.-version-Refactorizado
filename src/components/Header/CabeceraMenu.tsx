@@ -9,13 +9,12 @@ class CabeceraMenu extends React.Component<{}, {}>{
     public render(){
         return (<div id="cabeceraMenu">
             
-            <ul id="menu">
-              <li><a href="http://www.hermanoscofrades.com/es/173259-inicio">Inicio</a></li>            
+            <ul id="menu">  
+              <li><a href="http://www.hermanoscofrades.com/es/173253-ofertas">Ofertas</a></li>           
               <li><a href="http://www.hermanoscofrades.com/es/173260-quienes-somos">Quienes Somos</a></li>
-              <li><a href="http://www.hermanoscofrades.com/es/173253-ofertas">Ofertas</a></li>            
-              <li><a href="http://www.hermanoscofrades.com/es/173254-novedades">Novedades</a></li>
               <li><a href="http://www.hermanoscofrades.com/es/news/18685-noticia-2">Noticias</a></li>                         
               <li><a href="http://www.hermanoscofrades.com/es/173262-contacto">Contacto</a></li>
+              <li><a href="http://www.hermanoscofrades.com/es/173254-novedades">Novedades</a></li> 
 
               <li><a className= "redesCabecera" style={divStylePadding} href="tel:+34954089932"><img src="./Hermanos Cofrades Sevilla - Ropa y complementos para el cofrade_files/contactoTelf.svg" alt="Telófono"></img></a></li>           
               <li><a className= "redesCabecera" style={divStylePadding} href="mailto:info@hermanoscofrades.com"><img src="./Hermanos Cofrades Sevilla - Ropa y complementos para el cofrade_files/contactoMail.svg" alt="Email"></img></a></li> 

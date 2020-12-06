@@ -54,12 +54,11 @@ class Header extends React.Component<{}, {}>{
 
 
           <div className="usuarios ampliar">
-          <div className="letraUSCar">Identifícate <br></br> o Regístrate</div>
-            <a href="http://www.hermanoscofrades.com/register/login"><img src="./Hermanos Cofrades Sevilla - Ropa y complementos para el cofrade_files/usuarios.svg" alt="Usuarios"></img></a>
+            <a href="http://www.hermanoscofrades.com/register/login"><img src="./Hermanos Cofrades Sevilla - Ropa y complementos para el cofrade_files/usuarios.png" alt="Usuarios"></img></a>
           </div>
 
           <div id="carro">
-            <div id="carro-icono" className="ampliar"><div className="letraUSCar">Su carro:</div><img src="./Hermanos Cofrades Sevilla - Ropa y complementos para el cofrade_files/carrito.svg" alt="carrito"></img></div>
+            <div id="carro-icono" className="ampliar"><img src="./Hermanos Cofrades Sevilla - Ropa y complementos para el cofrade_files/carrito.png" alt="carrito"></img></div>
             <div className="carro-flotante">
               <div className="Cart" id="Cart">
                 <div id="carro-vacio">Su Carrito está vacío</div>

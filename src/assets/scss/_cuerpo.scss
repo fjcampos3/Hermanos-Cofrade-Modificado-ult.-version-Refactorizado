@@ -1,0 +1,31 @@
+#cuerpo {
+	width: 1060px;
+	margin: auto;
+	text-align: left;
+}
+#franjaSuperior {
+	width: 1060px;
+	margin: auto;
+	height: 20px;
+	background: url(images/principal-b.png) repeat-y top center;
+}
+#tablaPrincipal {
+	min-height: 298px;
+	width: 1060px;
+	margin: auto;
+	background: url(images/principal-b.png) repeat-y top center;
+}
+#franjaInferior {
+	width: 1060px;
+	margin: auto;
+	background: url(images/principal-b.png) repeat-y top center;
+	height: 30px;
+	clear: both;
+}
+.limpiar {
+	width: 100%;
+	clear: both;
+}
+
+@import "cuerpo/lateral";
+@import "cuerpo/principal";

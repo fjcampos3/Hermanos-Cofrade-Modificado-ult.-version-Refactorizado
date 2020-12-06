@@ -41,12 +41,6 @@ class Producto extends React.Component<IProductoProps>{
           <div className="productos-imagen">
             <a href={url + this.props.ahref}><img src={ubi + this.props.img2src} alt={this.props.nombre} width="220" height="220" className="lazy" title={this.props.nombre} data-original={url + url2 + this.props.img2src} style={divStyledisplay2}></img></a>
           </div>
-
-
-          <div className="vista-rapida-ficha">
-            <a href= {url + "indexVistaRapida.php?mod=products&amp;p=hermanoscofrades&amp;ID=10753654&amp;lang=es"} rel="980|650|/es/product/10753654-%09-trivial-sevilla-cofrade-version-ii" className="vista-rapida-ficha-link" id="vista-rapida-ficha-link-1" onClick={(event: React.MouseEvent<HTMLElement>) => {}}>Vista rápida</a>
-          </div> 
-
       
           <div className="nombreCont">
             <h2 className="productos-nombre"><a href={url + this.props.ahref}>{this.props.nombre}</a></h2>
