@@ -1,0 +1,74 @@
+﻿
+$(document).ready(function(){
+	Metodos();
+	scrollTop();
+});
+
+$(window).resize(function(){
+	//Metodos();
+});
+
+function Metodos() {
+	medidasCuerpo();
+	fichaProductosFinal();
+	Slider();
+}
+
+
+function medidasCuerpo() {
+
+	var altoPag = $(window).height();				/* Alto Ventana  */
+	var altoCab = $('#Cabz').height();				/* Alto Cabecera */
+	var altoPie = $('#Pie').height();				/* Alto Pie      */
+	var sepSupe = $('#franjaSuperior').height();	/* Alto Separador Superior */
+	var sepInfe = $('#franjaInferior').height();	/* Alto Separador Superior */
+	var altoMinimo = (altoPag - altoCab - altoPie - sepSupe - sepInfe) + "px";
+	$('#tablaPrincipal').css('min-height' , altoMinimo);
+	
+	$('#cat-descripcion table').css('width' , '100%');
+	$('html, body').css('min-width' , $('#cuerpo').width());
+	
+	//var anchoMenu = ((1000 - $('#cabeceraMenu').width()) / 2);
+	//$('#cabeceraMenu').css('margin-left' , anchoMenu + 0);	/* 0 = margin-left (Si el ancho no es 1000px) */
+
+}
+
+
+function fichaProductosFinal() {
+
+	ancho = $(window).width() + 15;
+	margenIzdo = (ancho/2)*(-1) - 118;
+
+	$('.fichaFixed').css('width', ancho + 'px');
+	$('.fichaFixed').css('margin-left', margenIzdo + 'px');
+	
+	$(window).scroll(function(){
+		valorScroll = $(window).scrollTop();
+		if (valorScroll > 200){
+			$('.fichaFixed').css({'top':'0px' , 'opacity':'1' , 'pointer-events':'auto'});
+		} else {
+			$('.fichaFixed').css({'top':'-80px' , 'opacity':'0' , 'pointer-events':'none'});
+		}
+	});	
+}
+
+
+function Slider() {
+	ancho = $('.callbacks_container').width(); alto = ancho / 2.5; <!-- Relación de aspecto del slider. Por defecto es = 2 -->
+	$('.rslides img').css('height', alto + 'px');
+	$('.rslides').css('height', alto + 'px');
+}
+
+
+function MuestraFecha(){
+	var piefecha = new Date(); 
+	var pie_ano = piefecha.getYear(); 
+	if (pie_ano < 1000) {pie_ano += 1900;} 
+	return( " " + pie_ano + " ");
+}
+
+
+/* Script para subir arriba en la página */
+function scrollTop(opciones){
+	var config={color:"rgba(255,255,255,0.7)", top:100, altura:400, time:500, position:"bottom", speed:300};
+	$.extend(config,opciones);var scrollElem=scrollableElement('html','body');function scrollableElement(els){for(var i=0,argLength=arguments.length;i<argLength;i++){var el=arguments[i],$scrollElement=$(el);if($scrollElement.scrollTop()>0){return el}else{$scrollElement.scrollTop(1);var isScrollable=$scrollElement.scrollTop()>0;$scrollElement.scrollTop(0);if(isScrollable){return el}}}return[]}var capa=$("body");switch(config.position){case"top":config.position="90%";break;case"middle":config.position="50%";break;case"bottom":if(document.body.clientWidth<1000){config.position="15px";}else{config.position="65px";}break}$(window).scroll(function(){if($(window).scrollTop()>config.top){capa.trigger("activa_flecha")}else{$("#arriba").animate({bottom:config.position,opacity:0},config.time,function(){$(this).remove()});creado=0}});var creado=0;capa.on("activa_flecha",function(e){if(creado==0){var elemento=$("<a href='#' id='arriba'><span></span></a>").css({width:"40px",height:"40px",position:"fixed","border-radius":"5px","border":"2px solid rgba(0,0,0,0.7)","z-index":"999","background-color":config.color,right:"1%",opacity:0,"box-shadow":"0px 0px 6px rgba(0,0,0,0.5)",bottom:config.position}).insertAfter(capa).animate({opacity:1,},config.time).on("click",function(e,obj){e.preventDefault();retirar($(this));$(scrollElem).animate({scrollTop:0},config.speed,"swing")});elemento.find("span").css({width:"40px",position:"relative",left:"0px",top:"0px",height:"40px",display:"block","background":"url(https://www.urbecom.com/js/scrollTop/ir-arriba.png) no-repeat center",});creado=1}});function retirar(obj){obj.animate({bottom:config.position,opacity:0},config.time)}}

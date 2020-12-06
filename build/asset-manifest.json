@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.13c8e189.chunk.css",
+    "main.js": "/static/js/main.40a340a4.chunk.js",
+    "main.js.map": "/static/js/main.40a340a4.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ba0a0475.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ba0a0475.js.map",
+    "static/js/2.3fb5b31b.chunk.js": "/static/js/2.3fb5b31b.chunk.js",
+    "static/js/2.3fb5b31b.chunk.js.map": "/static/js/2.3fb5b31b.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.a7154139ca07705070629bfac7f86f85.js": "/precache-manifest.a7154139ca07705070629bfac7f86f85.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.13c8e189.chunk.css.map": "/static/css/main.13c8e189.chunk.css.map",
+    "static/js/2.3fb5b31b.chunk.js.LICENSE.txt": "/static/js/2.3fb5b31b.chunk.js.LICENSE.txt",
+    "static/media/style.css": "/static/media/paginaFondoB.02fdae75.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ba0a0475.js",
+    "static/js/2.3fb5b31b.chunk.js",
+    "static/css/main.13c8e189.chunk.css",
+    "static/js/main.40a340a4.chunk.js"
+  ]
+}
