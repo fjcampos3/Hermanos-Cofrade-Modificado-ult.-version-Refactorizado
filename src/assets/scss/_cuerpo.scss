@@ -26,6 +26,23 @@
 	width: 100%;
 	clear: both;
 }
-
+@media only screen and (min-width: 1700px) {
+	#cuerpo {
+		width: 1270px;
+	}
+	#franjaSuperior {
+		width: 1270px;
+		background: url(images/principal-b2.png) repeat-y;
+	}
+	#tablaPrincipal {
+		width: 1270px;
+		background: url(images/principal-b2.png) repeat-y;
+	}
+	#franjaInferior {
+		width: 1270px;
+		background: url(images/principal-b2.png) repeat-y;
+	}
+}
 @import "cuerpo/lateral";
 @import "cuerpo/principal";
+

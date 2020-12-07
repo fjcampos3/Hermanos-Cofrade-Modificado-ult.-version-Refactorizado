@@ -3,11 +3,10 @@
 		margin: 0px;
 		padding: 0px;
 	}
-	width: 230px;
-	min-height: 370px;
+	width: 180px;
+	min-height: 250px;
 	margin: 10px;
 }
-
 .productos-contenedor {
 	text-align: center;
 	border: solid 1px #ebc2ed;
@@ -36,7 +35,6 @@
 		}
 	}
 }
-
 .nombreCont {
 	width: 230px;
 	height: 40px;
@@ -161,4 +159,49 @@
 	font-weight: bold;
 	font-size: 28px;
 	color: #F00;
+}
+.productos-cantidad {
+	.quantity-prop-pr {
+		width: 35px;
+		height: 23px;
+		margin: -5px;
+		text-align: center;
+	}
+	input.quantity-prop-pr {
+		font: bold 15px Arial, Helvetica;
+		line-height: 15px;
+	}
+	input.quantity-plus-prop-pr {
+		font: bold 15px Arial, Helvetica;
+		line-height: 15px;
+		width: 20px;
+		height: 25px;
+	}
+	input.quantity-minus-prop-pr {
+		font: bold 15px Arial, Helvetica;
+		line-height: 15px;
+		width: 20px;
+		height: 25px;
+	}
+}
+#producto_agotado {
+	margin-bottom: 20px;
+	padding: 20px;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	color: #7f1418;
+	border: solid #999 1px;
+	background-color: #E6E6;
+}
+@media only screen and (min-width: 1700px) {
+	.productos {
+		h1 {
+			margin: 0px;
+			padding: 0px;
+		}
+		width: 230px;
+		min-height: 370px;
+		margin: 10px;
+	}
 }

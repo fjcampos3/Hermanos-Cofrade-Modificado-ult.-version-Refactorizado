@@ -64,13 +64,13 @@
   position: absolute; }
 
 .usuarios {
-  margin: 17px 0px 0px 900px;
+  margin: 17px 0px 0px 755px;
   position: absolute; }
 
 #carro {
   width: 200px;
   min-height: 24px;
-  margin: 17px 20px 0px 1120px;
+  margin: 17px 20px 0px 970px;
   text-align: right;
   position: absolute; }
   #carro:hover .carro-flotante {
@@ -163,7 +163,7 @@
   -ms-transition: all 0.4s; }
 
 #buscar {
-  width: 230px;
+  width: 70px;
   height: 30px;
   margin: 35px 0px 0px 580px;
   margin-left: -115px;
@@ -171,17 +171,17 @@
   position: absolute; }
 
 .buscar {
-  width: 50%;
+  width: 30%;
   height: 22px;
   margin: 0px 0px 0px 580px;
   padding: 3px 25px 3px 30px; }
 
 .botonBuscar {
-  width: 30px;
+  width: 20px;
   height: 34px;
   float: left;
   display: block;
-  margin: 0px 0px 0px 287px;
+  margin: 0px 0px 0px 180px;
   border-radius: 0px 5px 5px 0px;
   background: #89418d; }
   .botonBuscar img {
@@ -189,7 +189,7 @@
     margin: 5px 0px 0px 0px; }
 
 .boton_buscar {
-  width: 100px;
+  width: 40px;
   height: 35px;
   font: bold 14px Arial, Helvetica, sans-serif;
   line-height: 12px;
@@ -246,6 +246,61 @@ ul#menu {
 #headerclear {
   clear: both; }
 
+@media only screen and (min-width: 1700px) {
+  #buscar {
+    width: 230px;
+    height: 30px;
+    margin: 35px 0px 0px 580px;
+    margin-left: -115px;
+    text-align: left;
+    position: absolute; }
+  .buscar {
+    width: 50%;
+    height: 22px;
+    margin: 0px 0px 0px 580px;
+    padding: 3px 25px 3px 30px; }
+  .botonBuscar {
+    width: 30px;
+    height: 34px;
+    float: left;
+    display: block;
+    margin: 0px 0px 0px 287px;
+    border-radius: 0px 5px 5px 0px;
+    background: #89418d; }
+    .botonBuscar img {
+      width: 20px;
+      margin: 5px 0px 0px 0px; }
+  .boton_buscar {
+    width: 70px;
+    height: 35px;
+    font: bold 14px Arial, Helvetica, sans-serif;
+    line-height: 12px;
+    border-radius: 8px;
+    border: 2px Solid #000000;
+    color: #ffffff;
+    background: #89418d; }
+    .boton_buscar:hover {
+      border: 2px Solid #000000;
+      color: #000000;
+      background: #ffffff; }
+  .usuarios {
+    margin: 17px 0px 0px 900px;
+    position: absolute; }
+  #carro {
+    width: 200px;
+    min-height: 24px;
+    margin: 17px 20px 0px 1120px;
+    text-align: right;
+    position: absolute; }
+    #carro:hover .carro-flotante {
+      opacity: 1;
+      width: 440px;
+      min-height: 50px;
+      height: inherit;
+      margin: 0px 0px 0px -400px;
+      padding: 7px;
+      display: block; } }
+
 #cuerpo {
   width: 1060px;
   margin: auto;
@@ -273,6 +328,19 @@ ul#menu {
 .limpiar {
   width: 100%;
   clear: both; }
+
+@media only screen and (min-width: 1700px) {
+  #cuerpo {
+    width: 1270px; }
+  #franjaSuperior {
+    width: 1270px;
+    background: url(images/principal-b2.png) repeat-y; }
+  #tablaPrincipal {
+    width: 1270px;
+    background: url(images/principal-b2.png) repeat-y; }
+  #franjaInferior {
+    width: 1270px;
+    background: url(images/principal-b2.png) repeat-y; } }
 
 .menos5 {
   margin-left: -5px; }
@@ -359,8 +427,8 @@ ul#menu {
   width: 100%; }
 
 .productos {
-  width: 230px;
-  min-height: 370px;
+  width: 180px;
+  min-height: 250px;
   margin: 10px; }
   .productos h1 {
     margin: 0px;
@@ -506,6 +574,51 @@ ul#menu {
   font-weight: bold;
   font-size: 28px;
   color: #F00; }
+
+.productos-cantidad .quantity-prop-pr {
+  width: 35px;
+  height: 23px;
+  margin: -5px;
+  text-align: center; }
+
+.productos-cantidad input.quantity-prop-pr {
+  font: bold 15px Arial, Helvetica;
+  line-height: 15px; }
+
+.productos-cantidad input.quantity-plus-prop-pr {
+  font: bold 15px Arial, Helvetica;
+  line-height: 15px;
+  width: 20px;
+  height: 25px; }
+
+.productos-cantidad input.quantity-minus-prop-pr {
+  font: bold 15px Arial, Helvetica;
+  line-height: 15px;
+  width: 20px;
+  height: 25px; }
+
+#producto_agotado {
+  margin-bottom: 20px;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #7f1418;
+  border: solid #999 1px;
+  background-color: #E6E6; }
+
+@media only screen and (min-width: 1700px) {
+  .productos {
+    width: 230px;
+    min-height: 370px;
+    margin: 10px; }
+    .productos h1 {
+      margin: 0px;
+      padding: 0px; } }
+
+@media only screen and (min-width: 1700px) {
+  #principal {
+    width: 980px; } }
 
 #noticias {
   margin: 0px; }
@@ -897,16 +1010,6 @@ form#busca textarea {
       color: #ffffff;
       background: #222222; }
 
-#producto_agotado {
-  margin-bottom: 20px;
-  padding: 20px;
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-  color: #7f1418;
-  border: solid #999 1px;
-  background-color: #E6E6; }
-
 .radio-boton {
   border-radius: 10px; }
 
@@ -1024,28 +1127,6 @@ form#busca textarea {
   float: left;
   display: inline; }
 
-.productos-cantidad .quantity-prop-pr {
-  width: 35px;
-  height: 23px;
-  margin: -5px;
-  text-align: center; }
-
-.productos-cantidad input.quantity-prop-pr {
-  font: bold 15px Arial, Helvetica;
-  line-height: 15px; }
-
-.productos-cantidad input.quantity-plus-prop-pr {
-  font: bold 15px Arial, Helvetica;
-  line-height: 15px;
-  width: 20px;
-  height: 25px; }
-
-.productos-cantidad input.quantity-minus-prop-pr {
-  font: bold 15px Arial, Helvetica;
-  line-height: 15px;
-  width: 20px;
-  height: 25px; }
-
 #form-cantidad-prop-pr {
   margin: 0;
   padding: 0; }
@@ -1090,16 +1171,6 @@ input.quantity-prop-pr {
   padding: 0;
   font: bold 20px Arial, Helvetica;
   border: solid 1px #aaaaaa; }
-
-.carro-fondo1 {
-  height: 35px;
-  color: #ffffff;
-  background: #89418d; }
-
-.carro-fondo2 {
-  height: 35px;
-  color: #000000;
-  background: #ffffff; }
 
 .redondo1 {
   padding: 4px;
@@ -1250,63 +1321,6 @@ input#cupon {
 [class^="separa-"], [class*=" separa-"], .limpiar, .separar {
   width: 100%;
   clear: both; }
-
-.iconHome:before {
-  content: "\e900"; }
-
-.iconCerrar:before {
-  content: "\e90c"; }
-
-.iconFlechaTop:before {
-  content: "\e901"; }
-
-.iconFlechaRight:before {
-  content: "\e902"; }
-
-.iconFlechaBottom:before {
-  content: "\e903"; }
-
-.iconFlechaLeft:before {
-  content: "\e904"; }
-
-.iconIconoMenu:before {
-  content: "\e905"; }
-
-.iconFacebook:before {
-  content: "\e90d"; }
-
-.iconTwitter:before {
-  content: "\e90e"; }
-
-.iconWordpress:before {
-  content: "\e90f"; }
-
-.iconBlog:before {
-  content: "\e910"; }
-
-.iconInstagram:before {
-  content: "\e911"; }
-
-.iconYoutube:before {
-  content: "\e912"; }
-
-.iconWhatsapp:before {
-  content: "\e913"; }
-
-.iconLinkedin:before {
-  content: "\e914"; }
-
-.iconPinterest:before {
-  content: "\e915"; }
-
-.iconMenuRedes:before {
-  content: "\e916"; }
-
-.iconEstrella:before {
-  content: "\e918"; }
-
-.iconFecha:before {
-  content: "\e919"; }
 
 .redondea {
   border-radius: 8px; }
@@ -1569,67 +1583,6 @@ a {
   width: 100%;
   clear: both; }
 
-.separar {
-  width: 100%;
-  clear: both; }
-
-.separa-01 {
-  height: 1px; }
-
-.separa-02 {
-  height: 2px; }
-
-.separa-03 {
-  height: 3px; }
-
-.separa-05 {
-  height: 5px; }
-
-.separa-10 {
-  height: 10px; }
-
-.separa-15 {
-  height: 15px; }
-
-.separa-20 {
-  height: 20px; }
-
-.separa-25 {
-  height: 25px; }
-
-.separa-30 {
-  height: 30px; }
-
-.separa-40 {
-  height: 40px; }
-
-.separa-50 {
-  height: 50px; }
-
-.separa-60 {
-  height: 60px; }
-
-.separa-70 {
-  height: 70px; }
-
-.separa-80 {
-  height: 80px; }
-
-.separa-90 {
-  height: 90px; }
-
-.separa-100 {
-  height: 100px; }
-
-.separa-120 {
-  height: 120px; }
-
-.separa-150 {
-  height: 150px; }
-
-.separa-200 {
-  height: 200px; }
-
 .seccion-form {
   font: 15px Arial, Helvetica;
   text-decoration: none; }
@@ -1843,28 +1796,131 @@ a {
 .dtoTxtVar {
   font-size: 70%; }
 
-@media only screen and (min-width: 1450px) {
+@media only screen and (min-width: 1700px) {
   BODY {
     background: url(images/paginaFondoB.png) repeat-y top center fixed, url(images/paginaFondo.jpg) repeat top center fixed; }
-  #cuerpo {
-    width: 1270px; }
-  #franjaSuperior {
-    width: 1270px;
-    background: url(images/principal-b2.png) repeat-y; }
-  #tablaPrincipal {
-    width: 1270px;
-    background: url(images/principal-b2.png) repeat-y; }
-  #franjaInferior {
-    width: 1270px;
-    background: url(images/principal-b2.png) repeat-y; }
   #pieContenedor {
     width: 1270px; }
-  #principal {
-    width: 980px; }
-  .modulos-sliders .slide {
-    margin: 5px 15px 5px 2px !important; }
   .linksImg img {
     margin: 15px 50px; } }
+
+.iconHome:before {
+  content: "\e900"; }
+
+.iconCerrar:before {
+  content: "\e90c"; }
+
+.iconFlechaTop:before {
+  content: "\e901"; }
+
+.iconFlechaRight:before {
+  content: "\e902"; }
+
+.iconFlechaBottom:before {
+  content: "\e903"; }
+
+.iconFlechaLeft:before {
+  content: "\e904"; }
+
+.iconIconoMenu:before {
+  content: "\e905"; }
+
+.iconFacebook:before {
+  content: "\e90d"; }
+
+.iconTwitter:before {
+  content: "\e90e"; }
+
+.iconWordpress:before {
+  content: "\e90f"; }
+
+.iconBlog:before {
+  content: "\e910"; }
+
+.iconInstagram:before {
+  content: "\e911"; }
+
+.iconYoutube:before {
+  content: "\e912"; }
+
+.iconWhatsapp:before {
+  content: "\e913"; }
+
+.iconLinkedin:before {
+  content: "\e914"; }
+
+.iconPinterest:before {
+  content: "\e915"; }
+
+.iconMenuRedes:before {
+  content: "\e916"; }
+
+.iconEstrella:before {
+  content: "\e918"; }
+
+.iconFecha:before {
+  content: "\e919"; }
+
+.separar {
+  width: 100%;
+  clear: both; }
+
+.separa-01 {
+  height: 1px; }
+
+.separa-02 {
+  height: 2px; }
+
+.separa-03 {
+  height: 3px; }
+
+.separa-05 {
+  height: 5px; }
+
+.separa-10 {
+  height: 10px; }
+
+.separa-15 {
+  height: 15px; }
+
+.separa-20 {
+  height: 20px; }
+
+.separa-25 {
+  height: 25px; }
+
+.separa-30 {
+  height: 30px; }
+
+.separa-40 {
+  height: 40px; }
+
+.separa-50 {
+  height: 50px; }
+
+.separa-60 {
+  height: 60px; }
+
+.separa-70 {
+  height: 70px; }
+
+.separa-80 {
+  height: 80px; }
+
+.separa-90 {
+  height: 90px; }
+
+.separa-100 {
+  height: 100px; }
+
+.separa-120 {
+  height: 120px; }
+
+.separa-150 {
+  height: 150px; }
+
+.separa-200 {
+  height: 200px; }
 
 #Pie {
   margin: auto;
@@ -1947,23 +2003,8 @@ a {
     height: 36px;
     margin: 10px 5px; }
 
-.iconIconoEmail:before {
-  content: "\e906"; }
-
-.iconIconoTelef:before {
-  content: "\e907"; }
-
-.iconPieDirec:before {
-  content: "\e908"; }
-
-.iconPieEmail:before {
-  content: "\e909"; }
-
-.iconPieTelef:before {
-  content: "\e90a"; }
-
-.iconPieMovil:before {
-  content: "\e917"; }
-
-.iconPieFax:before {
-  content: "\e90b"; }
+@media only screen and (min-width: 1700px) {
+  BODY {
+    background: url(images/paginaFondoB.png) repeat-y top center fixed, url(images/paginaFondo.jpg) repeat top center fixed; }
+  #pieContenedor {
+    width: 1270px; } }

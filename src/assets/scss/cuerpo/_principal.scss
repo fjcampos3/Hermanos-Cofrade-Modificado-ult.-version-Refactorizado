@@ -43,6 +43,11 @@
 }
 @import "principal/producto";
 
+@media only screen and (min-width: 1700px) {
+	#principal {
+		width: 980px;
+	}
+}
 #noticias {
 	margin: 0px;
 }

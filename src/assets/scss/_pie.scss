@@ -85,38 +85,12 @@
 		margin: 10px 5px;
 	}
 }
-.iconIconoEmail {
-	&:before {
-		content: "\e906";
+@media only screen and (min-width: 1700px) {
+	BODY {
+		background: url(images/paginaFondoB.png) repeat-y top center fixed, url(images/paginaFondo.jpg) repeat top center fixed;
 	}
-}
-.iconIconoTelef {
-	&:before {
-		content: "\e907";
-	}
-}
-.iconPieDirec {
-	&:before {
-		content: "\e908";
-	}
-}
-.iconPieEmail {
-	&:before {
-		content: "\e909";
-	}
-}
-.iconPieTelef {
-	&:before {
-		content: "\e90a";
-	}
-}
-.iconPieMovil {
-	&:before {
-		content: "\e917";
-	}
-}
-.iconPieFax {
-	&:before {
-		content: "\e90b";
+
+	#pieContenedor {
+		width: 1270px;
 	}
 }
